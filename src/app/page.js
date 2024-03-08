@@ -1,11 +1,11 @@
-import { app } from "@/firebase/firebase.config";
-import { getAuth} from "firebase/auth";
+import Image from "next/image";
+import LoginPage from "./login/page";
+
 export default function Home() {
-  const auth = getAuth(app);
-  console.log(auth)
   return (
     <div>
       Hello world
+      <LoginPage/>
     </div>
   );
 }
